@@ -7,3 +7,17 @@
 	data-domain-uuid="0cb11ba8-c420-40a0-acf3-4d9d72bd4fec"
 	data-backend-url="https://app.securiti.ai">
 </script>
+<script>
+const script = document.querySelector('script[data-domain-uuid]')
+script.addEventListener('load', () => {
+  // invoke setConsentBannerParams
+  window.setConsentBannerParams({
+    overrideBannerLanguage: {
+       CustomBannerLanguage: 'de'
+     },
+     overrideBannerLocation: {
+        CustomBannerLocation: 'AU'
+     }
+  })
+})
+</script>
