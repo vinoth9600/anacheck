@@ -1,20 +1,16 @@
-<head>
-
-<h1> GCM CHECK </h1>
-<!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
 <script
-	defer
-	data-strict-csp
-	data-skip-css="false"
-	src="https://cdn-prod.securiti.ai/consent/cookie-consent-sdk-loader-strict-csp.js"
-	data-tenant-uuid="fc7a1c8b-281a-461f-8245-d27a7164f69b"
-	data-domain-uuid="0cb11ba8-c420-40a0-acf3-4d9d72bd4fec"
-	data-backend-url="https://app.securiti.ai">
-s.addEventListener('load',function() {
-window.setConsentBannerParams({
-overrideBannerLanguage: {
-'https://vinoth9600.github.io/anacheck':'sq'
-}
-});
-});
+   defer
+   data-strict-csp
+   data-skip-css="false"
+   src=https://cdn-prod.securiti.ai/consent/cookie-consent-sdk-loader-strict-csp.js
+   data-tenant-uuid="fc7a1c8b-281a-461f-8245-d27a7164f69b"
+   data-domain-uuid="0cb11ba8-c420-40a0-acf3-4d9d72bd4fec"
+   data-backend-url=https://app.securiti.ai>
+   addEventListener("load", function() {
+       window.setConsentBannerParams(
+           { uuid: <unique_id>,
+               overrideBannerLanguage: {
+                    'https://vinoth9600.github.io/anacheck': 'es'
+               }
+           });
 </script>
